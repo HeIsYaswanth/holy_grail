@@ -1,0 +1,157 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+#header {
+  padding-top: 10px;
+  height: 60px;
+  background-color: #ffe874;
+  text-align: center;
+  font-size: xx-large;
+}
+
+#middle {
+  display: flex;
+  justify-content: space-between;
+  /* text-align: left; */
+  font-size: xx-large;
+}
+#images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#img {
+  padding: 10px 0px 10px 0px;
+  max-width: 800px;
+  max-height: 300px;
+}
+#contentbar {
+  background-color: aliceblue;
+  padding-left: 10px;
+  font-size: 1.5rem;
+  /* text-align: start; */
+  font-family: sans-serif;
+  flex-grow: 1;
+}
+#contentbar h2 {
+  text-align: start;
+  padding-left: 30px;
+}
+#navigationbar {
+  padding-top: 10px;
+  height: auto;
+  width: 100px;
+  max-width: 100px;
+  background-color: #ffa565;
+  font-size: large;
+  /* flex-shrink: 0; */
+}
+
+#navbar ul {
+  padding: 10px 5px 0px 5px;
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  gap: 70px;
+  align-items: start;
+  justify-content: flex-start;
+}
+#navbar a {
+  text-decoration: none;
+  color: black;
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+}
+#adsbar {
+  padding-top: 10px;
+  height: auto;
+  width: 100px;
+  background-color: #81ffa7;
+  text-align: center;
+  font-size: large;
+  flex-shrink: 0;
+}
+#adsbar img {
+  padding: 5px;
+  max-width: 80px;
+  max-height: 80px;
+}
+#footer {
+  /* margin-top: 8px; */
+  height: 100px;
+  background-color: #46ecff;
+  text-align: center;
+}
+#footer h2 {
+  margin: 0px;
+  padding-top: 10px;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  #img {
+    padding: 10px 0px 10px 0px;
+    max-width: 220px;
+    max-height: 200px;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  #contentbar {
+    background-color: aliceblue;
+    padding-left: 10px;
+    font-size: 1rem;
+    text-align: start;
+    font-family: sans-serif;
+    flex-grow: 1;
+  }
+  #contentbar h2 {
+    text-align: start;
+    padding-left: 10px;
+    font-size: medium;
+  }
+  #navbar ul {
+    padding: 10px 9px 0px 5px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    gap: 30px;
+    align-items: start;
+  }
+  #navbar a {
+    text-decoration: none;
+    color: black;
+    font-family: "poppins", sans-serif;
+    font-size: 0.7rem;
+  }
+  #navigationbar {
+    padding-top: 10px;
+    height: auto;
+    width: 80px;
+    background-color: #ffa565;
+    text-align: center;
+    font-size: large;
+    flex-shrink: 0;
+  }
+  #adsbar {
+    padding-top: 10px;
+    height: auto;
+    width: 80px;
+    background-color: #81ffa7;
+    text-align: center;
+    font-size: large;
+    flex-shrink: 0;
+  }
+  #footer h2 {
+    margin: 0px;
+    padding-top: 10px;
+    font-size: 1.5rem;
+  }
+}
